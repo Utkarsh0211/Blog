@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>My Web</title>
+         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+           <script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+         <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+     <script>
+"use stict";
+alert("🌹WELCOME! This is my first try to design web. Don't forget to like.😉")
+alert("If you have any suggetions or wanna guide me something about improvement in this pls tell me.Thank You!👍")
+function popUp(){
+swal("Bye🌹", "😇Thanks to visit! I hope you like it.", "success", {
+
+  button: "Thank You!🌷",
+});
+}
+</script>
+
+    <style>
+       body
+{
+   background-color: #d7dbdd; 
+}
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style: none;
+  text-decoration: none;
+}
+nav{
+  background: white;
+  height: 80px;
+  width: 100%;
+  position: fixed;
+  border-bottom-color: #8e44ad;
+  border-bottom-style: groove;
+  border-bottom-width: 2px;
+}
+label.logo{
+  font-size: 33px;
+  line-height: 80px;
+  padding: 0 auto;
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+nav ul{
+  float: right;
+  margin-right: 60px;
+}
+nav ul li{
+  display: inline-block;
+  line-height: 80px;
+  margin: 0 2px;
+}
+nav ul li a{
+  font-weight: 500;
+  font-size: 20px;
+  padding: 7px 9px;
+  border-radius: 3px;
+  /* text-transform: uppercase; */
+}
+a.active,a:hover{
+  background: white;
+  transition: .5s;
+}
+.checkbtn{
+  font-size: 30px;
+  float: left;
+  line-height: 80px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+#check{
+  display: none;
+}
+@media (max-width: 952px){
+  label.logo{
+    font-size: 33px;
+    padding-right: 45px;
+    text-align: center;
+  }
+  nav ul li a{
+    font-size: 16px;
+  }
+}
+@media (max-width: 858px){
+  .checkbtn{
+    display: block;
+    margin-right: 30px;
+  }
+  ul{
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    background: white;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    text-decoration: none;
+    transition: all .5s;
+  }
+  nav ul li{
+    display: block;
+    margin: 30px 0;
+    line-height: 30px;
+  }
+  nav ul li a{
+    font-size: 20px;
+  }
+  a:hover,a.active{
+    background: none;
+  }
+  #check:checked ~ ul{
+    left: 0;
+  }
+}
+
+h1{
+font-family:Lobster,Monospace;
+text-align:center;
+font-size: 23px;
+text-transform: uppercase;
+font-weight: 550;
+}
+div.header {
+    border-radius: 25px;
+    background-color: white;
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+    margin-top: 20px;
+    border-color: gray;
+    border-style: inset;
+    border-width: 1px;
+    box-shadow: 0 3px #99a3a4;
+}
+#photo
+{    
+    width:120px;
+    height:120px;
+    border-radius:100%;
+    padding:0 auto;
+    border:Solid white;
+}
+img
+{
+    display:blocl;
+    margin:0 25px 0 0;
+}
+.profile
+{
+    background-color: white;
+    border-radius: 22px;
+    padding: 10px;
+    margin: 12px 12px;
+    border-color: gray;
+    border-style: outset;
+    border-width: 1.3px;
+    box-shadow: 0 1.5px 0 1.5px #85929e;
+    width:auto;
+    height:auto;
+}
+.nm
+{ 
+    text-align:center;
+    font-size: 25px;
+    font-weight: 600;
+    margin: 5px auto;
+    padding-top: 9px;
+    padding:5px auto;
+}
+t
+div.profile p {
+  padding:15px; 
+  font-weight: 450;
+  font-weight: bold;
+  font-size:22px;
+}
+#sign
+{
+    text-align: right;
+}
+div.quotes
+{
+    border-radius: 20px;
+    margin-top: 50px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 50px;
+    background-color: #fdfefe;
+    border-color: gray;
+    border-style: outset;
+    border-width: 1.3px;
+    box-shadow: 0 1.5px 0 1.5px #85929e;
+    counter-reset: section;
+}
+#ra
+{
+    font-size:38px;
+    text-align: center;
+}
+.inn
+{
+   background-color: white;
+   border-radius: 15px;
+   margin: 8px 9px; 
+}
+.hrln
+{
+    border-color:#2980b9;
+}
+.inn:hover
+{
+   color: #2ecc71;
+}
+.inn::before 
+{
+    counter-increment: section;
+    content: "" counter(section) ".  ";
+}
+.med
+{
+    background-color: white;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 50px;
+    border-radius: 22px;
+    border-color: gray;
+    border-style: outset;
+    border-width: 1.3px;
+    box-shadow: 0 1.5px 0 1.5px #85929e;
+}
+#md
+{
+    font-size: 35px;
+    text-align: center;
+}
+#ytb
+{
+    width: 96%;
+    height: 230px;
+    margin: 0 4px 8px 8px;
+    border-radius: 18px;
+    display: block;
+    text-align: center;
+}
+.news
+{
+    background-color: white;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 50px;
+    border-radius: 22px;
+    border-color: gray;
+    border-style: outset;
+    border-width: 1.3px;
+    box-shadow: 0 1.5px 0 1.5px #85929e;
+}
+#nw
+{
+    font-size: 35px;
+    text-align: center;
+}
+#nws
+{
+    margin: 0 4px 8px 8px;
+    border-radius: 18px;
+    height: 430px;
+}
+.guide
+{
+    background-color: white;
+    height: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 30px;
+    border-radius: 22px;
+    border-color: gray;
+    border-style: outset;
+    border-width: 1.3px;
+    box-shadow: 0 1.5px 0 1.5px #85929e;
+}
+#flw
+{
+    font-size: 22px;
+    text-align: center;
+    color: black;
+    padding-top: 12px;
+    padding-bottom: 10px;
+    font-weight: 350px;
+    font-style: bolder;
+}
+#fit
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding-bottom: 4px;
+    margin: 4px 6px 8px 6px;
+}
+.pt
+{
+    width: 40px;
+    height: auto;
+    text-decoration: none;
+}
+.pt:hoover
+{
+    border-width: 25px;
+    border-color: white;
+}
+#inf
+{
+    color: blue;
+    padding-left: 10px;
+    padding-bottom: 6px;
+}
+#bye
+{
+    background-color: white;
+    height: auto;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 10px;
+    border-radius: 22px;
+    border-color: gray;
+    text-align: center;
+    border-style: outset;
+    border-width: 1.3px;
+    box-shadow: 0 1.5px 0 1.5px #85929e;
+}
+#thk
+{
+    font-size: 22px;
+    text-align: center;
+    color: purple;
+    padding-top: 7px;
+    padding-bottom: 7px;
+}
+#vst
+{
+    border-radius: 22px;
+    margin-bottom: 12px;
+    margin-top: 9px;
+    background-color: yellow;
+    width: 95px;
+    height: 45px;
+    font-size: 20px;
+    border-color: black;
+}
+#vst:hover
+{
+    background-color: cyan;
+    padding-top: 4px;
+    border-color: red;
+}
+#crt
+{
+    font-size: 1em;
+    text-align: right;
+    font-style: italic;
+    color: black;
+    margin-right: 6px;
+}
+#right
+{
+    font-size: 12px;
+    text-align: left;
+    font-style: italic;
+    color: gray;
+    margin-left: 6px;
+    margin-top: 8px;
+    margin-bottom: 7px;
+}    
+/* for mobile view */ 
+@media (max-height: 360px;){
+    .med { width: 332px; height: 230px; }
+}
+    </style>
+    </head>
+    <body>
+          <nav>
+      <input type="checkbox" id="check">
+      <label for="check" class="checkbtn">
+        <i class="fas fa-bars"></i>
+      </label>
+      <label class="logo">Blog</label>
+      <ul>
+<li><a class="active" href="#">Home</a></li>
+<center><hr style="width:90%; color:green; margin-bottom:5px;"/></center>  
+<li><a href="#quotes">Quotes</a></li>
+<center><hr style="width:90%; color:green; margin-bottom:5px;"/></center>  
+<li><a href="#med">Media</a></li>
+<center><hr style="width:90%; color:green; margin-bottom:5px;"/></center>  
+<li><a href="#nws">News</a></li>
+<center><hr style="width:90%; color:green; margin-bottom:5px;"/></center>  
+</ul>
+</nav>
+     <br><br><br><br>
+     <div class="header">
+     <h1>Welcome to my Page</h1>
+     </div>
+     <div class="profile">
+<center><img id="photo" src="https://api.sololearn.com/Uploads/Avatars/12887701.jpg"></center>
+     <div class="nm">
+     <p>Utkarsh Meshram</p>
+     <p>Solo Learner</p>
+     </div>
+    <div class="profile">
+         <p>Hey! I'm <strong>Utkarsh</strong>. Coding has changed my world. Learning to code gave me <i>problem-solving skills</i> and a way to communicate with others on a technical level. Be inside your house, do practice.Learn new things and be safe.Thanks for visit, <b>Good luck!</b>
+         <br>
+    <b id="sign">~ Utkarsh Meshram</b> 
+        </p>
+    </div>
+   </div>
+    
+    <div class="quotes">
+     <a name="quotes">
+      <p id="ra"><u>Quotes</u></p>
+<center><hr style="width:90%; border-color:red; margin-bottom:25px; margin-top:4px"/>
+</center>   
+       <p class="inn"><q>Be the <b>CHANGE</b> that you wish to see in the world</q> ~ <b>Mahatma Gandhi</b></p>
+       <hr class="hrln" style="width:100%; margin-bottom: 7px; margin-top:4px"/>
+       <p class="inn"><q>If you look at what you have in your life. you'll <strong>Allways have more.</strong></q> ~ <b>Oprah Winfrey</b></p>
+         <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+       <p class="inn"><q>Sometimes you will never know the <b>Value</b> of a moment, until it becomes a <b>Memory</b></q> ~ <b>Dr Seuss</b></p>
+         <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+       <p class="inn"><q>The first step towards getting somewhere is to decide you're not going to stay where you are.</q> ~ <b>J.P.Morgan</b></p>
+         <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+       <p class="inn"><q>Be <strong>thankful</strong> for what you have, you'll endup <strong>having more.</strong> If you concentrate on what you <strong>don't</strong> have, you will <strong>never, ever</strong> have enough.</q> ~ <b>Oprah Winfrey</b></p>
+         <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+       <p class="inn"><q>There is only one thing that makes a dream impossible to achieve : <b>the fear of failure.</b></q> ~ Unknown</p>
+         <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+       <p class="inn"><q>You can't go back and change the <b>beginning</b>, but you can start where you are and change the <b>ending</b></q> ~ Unknown</p>
+        <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+       <p class="inn"><q>All our dreams can come true, if we have the <b>courage</b> to pursue them.</q> ~ <b><u>Walt Disney</u></b></p>
+       <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+       <p class ="inn"><q>Spend a little more time trying to make something of yourself and a little less time trying to impress people.</q> ~ <b><i>The Breakfast Club</i></b></p>
+        <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+       <p class="inn"><q>It's okay to a glowstick; sometimes we have to break before shine.</q> ~ <b>Jadah Sellner</b></p>
+        <hr class="hrln" style="width:100%;  margin-bottom: 7px; margin-top:4px"/>
+        <p class="inn"><q>Tough <strong>times</strong> don't last. Tough <strong>people</strong> do.</q> ~ unknown</p>
+    </div>
+    <div class="med">
+    <a name="med">
+     <p id="md">Media</p>
+<center><hr style="width:90%; color:grey; margin-bottom:10px; margin-top:4px"/></center>   
+      <iframe id="ytb" src="https://youtube.com/embed/K44-JjsCe0M? showinfo=0&HD=0&autoplay=0"allowfullscreen>
+       </iframe> 
+      </div> 
+      <div class="news">
+       <a name="nws">
+       <p id="nw">Covid-19 News</p>
+<center><hr style="width:90%; color:green; margin-bottom:10px; margin-top:4px"/></center>   
+       <iframe id="nws" width="96%" height="450px" src="https://www.worldometers.info/coronavirus/country/india/"></iframe>
+      </div>
+      <div class="guide">
+         <p id="flw">You can Guide me about web development or follow on</p>
+         <center><hr style="width:90%; color:grey; margin-bottom:10px; margin-top:4px"/></center>   
+        <div id="fit">
+              <a href="https://www.sololearn.com/Profile/12887701/?ref=app" target="_blank"><img class="pt" src="https://www.sololearn.com/Uploads/icons/sololearn.png" alt="Sololearn" title="sololearn"/></a>
+              <a href="https://instagram.com/utkarsh_v_meshram?igshid=4lcetemoa5y7"><img src="https://img.icons8.com/fluent/40/000000/instagram-new.png" alt="instagram" title="instagram"/></a>
+              <a href="https://rb.gy/gzcc4m"><img class="pt" src="https://image.flaticon.com/icons/png/128/185/185988.png" alt="Whatsapp" title="Whatsapp"/></a>
+              <a href="https://www.facebook.com/utkarsh.meshram.7311"><img class="pt" src="https://img.icons8.com/fluent/40/000000/facebook-new.png"
+alt="facebook" title="facebook"/></a>
+              <a href="https://www.youtube.com/channel/UCBJI3sGLqXfAWNmT62AHcng" target="_blank"><img class="pt" src="https://image.flaticon.com/icons/png/128/185/185983.png" alt="Youtube" title="Youtube" /></a>
+        </div>
+     <p text-align="left" id="inf">*All Working</p>
+     </div>
+    <div id="bye">
+     <p id="thk">Click here if you like this</p>
+       <center><hr style="width:90%; color:grey; margin-bottom:5px; margin-top:4px"/></center>   
+         <button id="vst" onclick="popUp()">Hey😍</button>
+     </div>
+   <p id="crt">created by Utkarsh Meshram</p>
+   <p id="right">&copy; 2020 UVM. All rights reserved</p>
+ 
+    </body>
+</html>
